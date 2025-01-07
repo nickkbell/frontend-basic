@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      name="registration"
+      action=""
+      method="post"
+      style="text-align: center; width: 100%; max-width: 500px; margin: 0 auto;"
+    >
+      <span style="float: right; cursor: pointer; color: green">x</span>
+      <h3 style="margin-bottom: 40px; font-size: 20px">
+        Login <span style="margin-left: 12px; margin-right: 10px">|</span>
+        <span style="color: green">Register</span>
+      </h3>
+
+      <p style="text-align: center; margin-bottom: 14px">
+        Enter your email and password to register.
+      </p>
+
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 16px;
+        "
+      >
+        <input
+          type="text"
+          name="Username"
+          placeholder="Username"
+          id="Username"
+          style="
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 0 10px;
+          "
+        />
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 16px;
+        "
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          id="email"
+          style="
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 0 10px;
+          "
+        />
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 16px;
+        "
+      >
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="password"
+          style="
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 0 10px;
+          "
+        />
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 41px;
+        "
+      >
+        <input
+          type="password"
+          name="confirm_password"
+          placeholder="Confirm password"
+          id="confirmPassword"
+          style="
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            padding: 0 10px;
+          "
+        />
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 36px;
+        "
+      >
+        <button
+          type="submit"
+          style="
+            width: 100%;
+            max-width: 300px;
+            height: 45px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+          "
+        >
+          Register
+        </button>
+      </div>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 27px;
+        "
+      >
+        <div style="width: 95px; height: 0; border-top: 1px solid #ccc"></div>
+        <span style="margin: 0 10px; color: #666">Or register with</span>
+        <div style="width: 95px; height: 0; border-top: 1px solid #ccc"></div>
+      </div>
+
+      <div style="margin: 15px">
+        <a
+          href="https://accounts.google.com/signin"
+          style="
+            display: flex;
+            text-decoration: none;
+            color: #555;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 300px;
+            justify-content: center;
+          "
+        >
+          <img src="images/google.svg" alt="google icon">
+          <span style="margin-left: 10px">Continue with Google</span>
+        </a>
+      </div>
+
+      <div style="margin: 10px">
+        <a
+          href="https://www.facebook.com/login"
+          style="
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #555;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 300px;
+            margin: 0 auto;
+            justify-content: center;
+          "
+        >
+        <img src="images/facebook.svg" alt="facebook icon">
+          <span style="margin-left: 10px">Continue with Facebook</span>
+        </a>
+      </div>
+    </form>
+  </body>
+</html>
