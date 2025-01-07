@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form name="registration" action="" method="post">
+      <span class="closeIcon">x</span>
+      <h3>
+        Login <span class="separator">|</span>
+        <span class="textGreen">Register</span>
+      </h3>
+      <p class="mainTitle">Enter your email and password to register.</p>
+      <div class="inputBlock">
+        <input
+          type="text"
+          name="Username"
+          placeholder="Username"
+          id="Username"
+        />
+      </div>
+      <div class="inputBlock">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          id="email"
+        />
+      </div>
+      <div class="inputBlock">
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="password"
+        />
+      </div>
+      <div class="inputBlock">
+        <input
+          type="password"
+          name="confirm_password"
+          placeholder="Confirm password"
+          id="confirmPassword"
+        />
+      </div>
+      <div class="buttonBlock">
+        <button type="submit">Register</button>
+      </div>
+      <div class="inputBlock">
+        <div class="line"></div>
+        <span>Or register with</span>
+        <div class="line"></div>
+      </div>
+      <a href="https://accounts.google.com/signin" class="link">
+        <img src="images/google.svg" alt="google icon" />
+        <span style="margin-left: 10px">Continue with Google</span>
+      </a>
+      <a href="https://www.facebook.com/login" class="link">
+        <img src="images/facebook.svg" alt="facebook icon" />
+        <span style="margin-left: 10px">Continue with Facebook</span>
+      </a>
+    </form>
+  </body>
+</html>

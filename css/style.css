@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.closeIcon {
+    float: right;
+    cursor: pointer;
+    color: green;
+}
+
+.separator {
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.textGreen {
+    color: green;
+}
+
+.mainTitle {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.inputBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+    margin-top: 41px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    background-color: #46A358;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #059c23;
+}
+
+.registerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.line span {
+    margin: 0 10px;
+    color: #666;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #727272;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+.link:hover {
+    background-color: #e0e0e0;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
