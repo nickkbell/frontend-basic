@@ -21,6 +21,7 @@ form {
     float: right;
     cursor: pointer;
     color: green;
+    text-decoration: none;
 }
 
 .separator {
@@ -111,9 +112,17 @@ button:hover {
     color: #727272;
     width: 100%;
     max-width: 300px;
-    margin-bottom: 15px;
     box-sizing: border-box;
     margin: 10px auto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    text-align: center;
+    color: #727272;
+}
+
+.link img {
+    margin-right: 10px;
 }
 
 .link:hover {
