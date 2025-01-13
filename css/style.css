@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 h3 {
@@ -119,7 +120,123 @@ button:hover {
     background-color: #e0e0e0;
 }
 
-img {
-    width: 20px;
-    height: 20px;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 12px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav ul li a {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+header .login {
+    background: #46A358;
+    border-radius: 6px;
+    padding: 7px 17px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+header .login svg{
+    margin-right: 4px;
+}
+
+header .login svg path{
+    transition: 0.4s;
+}
+
+header .login:hover {
+    background-color: white;
+    color: #46A358;
+}
+
+header .login:hover svg path{
+    stroke: #46A358;
+}
+
+main article {
+    padding-left: 40px;
+}
+
+main article h3 {
+    text-align: left;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-bottom: 7px;
+}
+
+main article h1 {
+    text-align: left;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-bottom: 5px;
+}
+
+main article h1 span {
+    color: #46a358;
+}
+
+main article p {
+    text-align: left;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    padding-bottom: 44px;
+}
+
+main article a {
+    background: #46A358;
+    border-radius: 6px;
+    padding: 10px 26px;
+    display: inline;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fff
+}
+
+main article a:hover {
+    background-color: white;
+    color: #46A358;
+}
+
+main .container {
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
