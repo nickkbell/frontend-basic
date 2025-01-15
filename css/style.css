@@ -190,7 +190,7 @@ main article {
     padding-left: 40px;
 }
 
-main article h3 {
+.banner-sub-title {
     text-align: left;
     font-family: "Cera Pro", sans-serif;
     font-weight: 500;
@@ -202,7 +202,7 @@ main article h3 {
     padding-bottom: 7px;
 }
 
-main article h1 {
+.banner-main-title {
     text-align: left;
     font-family: "Cera Pro", sans-serif;
     font-weight: 900;
@@ -213,11 +213,11 @@ main article h1 {
     padding-bottom: 5px;
 }
 
-main article h1 span {
+.banner-main-title span {
     color: #46a358;
 }
 
-main article p {
+.banner-paragraph {
     text-align: left;
     font-family: "Cera Pro", sans-serif;
     font-weight: 400;
@@ -227,7 +227,7 @@ main article p {
     padding-bottom: 44px;
 }
 
-main article a {
+.banner-redirect {
     background: #46A358;
     border-radius: 6px;
     padding: 10px 26px;
@@ -241,7 +241,7 @@ main article a {
     color: #fff
 }
 
-main article a:hover {
+.banner-redirect:hover {
     background-color: white;
     color: #46A358;
 }
