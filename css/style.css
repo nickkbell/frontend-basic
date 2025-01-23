@@ -351,7 +351,12 @@ main .banner .container {
     cursor: pointer;
 }
 
-.sidebar ul li:active {
+.sidebar ul li a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.sidebar ul li a:active {
     color: #46a358;
     font-family: 'fontspring_demo_-_cera_proBd';
 }
@@ -391,9 +396,15 @@ main .banner .container {
     cursor: pointer;
 }
 
-.nav-panel ul li:active {
+.nav-panel ul li a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.nav-panel ul li a:active {
     color: #46a358;
     text-decoration: underline;
+    font-family: 'fontspring_demo_-_cera_proBd';
 }
 
 .sort-container {
