@@ -4,50 +4,228 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GREENSHOP</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
         <a href="#">
-          <img src="images/logo.svg" alt="logo">
+          <img src="images/logo.svg" alt="logo" />
         </a>
         <nav>
           <ul>
             <li>
               <a href="#">Home</a>
             </li>
-            <li> <a href="#">Shop</a></li>
-             
+            <li><a href="#">Shop</a></li>
+
             <li><a href="#">Planet Care</a></li>
             <li><a href="#">Blogs</a></li>
           </ul>
         </nav>
         <a href="registration.html" class="login">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.1601 10.1006H8.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M15.7212 7.67059L18.1612 10.1006L15.7212 12.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M13.6342 6.35826C13.3592 3.37493 12.2425 2.2916 7.80082 2.2916C1.88332 2.2916 1.88332 4.2166 1.88332 9.99993C1.88332 15.7833 1.88332 17.7083 7.80082 17.7083C12.2425 17.7083 13.3592 16.6249 13.6342 13.6416" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            Login
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.1601 10.1006H8.12598"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.7212 7.67059L18.1612 10.1006L15.7212 12.5306"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.6342 6.35826C13.3592 3.37493 12.2425 2.2916 7.80082 2.2916C1.88332 2.2916 1.88332 4.2166 1.88332 9.99993C1.88332 15.7833 1.88332 17.7083 7.80082 17.7083C12.2425 17.7083 13.3592 16.6249 13.6342 13.6416"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Login
         </a>
       </div>
     </header>
 
     <main>
-        <section class="banner">
-            <div class="container">
-                <article>
-                    <h3 class="banner-sub-title">Welcome to GREENSHOP</h3>
-                    <h1 class="banner-main-title">LET'S MAKE A BETTER <span>PLANET</span></h1>
-                    <p class="banner-paragraph">We are an online plant shop offering a wide range of cheap and trendy plants.
-                         Use our plants to create an unique Urban Jungle. Order your favorite plants! </p>
-                    <a class="banner-redirect" href="#">SHOP NOW</a>
-                </article>
-                <img src="images/Component1.png">
+      <section class="banner">
+        <div class="container">
+          <article>
+            <h3 class="banner-sub-title">Welcome to GREENSHOP</h3>
+            <h1 class="banner-main-title">
+              LET'S MAKE A BETTER <span>PLANET</span>
+            </h1>
+            <p class="banner-paragraph">
+              We are an online plant shop offering a wide range of cheap and
+              trendy plants. Use our plants to create an unique Urban Jungle.
+              Order your favorite plants!
+            </p>
+            <a class="banner-redirect" href="#">SHOP NOW</a>
+          </article>
+          <img src="images/Component1.png" />
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+              <li>House Plants</li>
+              <li>Potter Plants</li>
+              <li>Seeds</li>
+              <li>Small Plants</li>
+              <li>Big Plants</li>
+              <li>Succulents</li>
+              <li>Trerrariums</li>
+              <li>Gardening</li>
+              <li>Accessories</li>
+            </ul>
+            <div class="banner-container">
+              <h3>Super Sale</h3>
+              <p>UP TO 75% OFF</p>
+              <img
+                src="images/saleBanner.svg"
+                class="sale-banner"
+                alt="Sale Banner"
+              />
             </div>
-        </section>
+          </div>
+          <div class="content">
+            <div class="nav-wrapper">
+              <div class="nav-panel">
+                <ul>
+                  <li>All Plants</li>
+                  <li>New Arrivals</li>
+                  <li>Sale</li>
+                </ul>
+              </div>
+              <div class="sort-container">
+                <label for="sort-options" class="sort-label">Sort by:</label>
+                <select class="sort-select">
+                  <option value="option1">Default sorting</option>
+                  <option value="option2">High to Low</option>
+                  <option value="option3">Low to High</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex-container">
+              <div class="product-card">
+                <img
+                  src="images/items/image1.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Barberton Daisy</h4>
+                  <p class="product-price">$119.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image2.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Angel Wing Begonia</h4>
+                  <p class="product-price">$169.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image3.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">African Violet</h4>
+                  <p class="product-price">$199.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image4.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Beach Spider Lily</h4>
+                  <p class="product-price">$129.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image5.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Blushing Bromeliad</h4>
+                  <p class="product-price">$139.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image6.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Aluminum Plant</h4>
+                  <p class="product-price">$179.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image7.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Bird's Nest Fern</h4>
+                  <p class="product-price">$99.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image8.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Broadleaf Lady Palm</h4>
+                  <p class="product-price">$59.00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="images/items/image9.png"
+                  alt="Product Image"
+                  class="product-image"
+                />
+                <div class="product-details">
+                  <h4 class="product-name">Chinese Evergreen</h4>
+                  <p class="product-price">$39.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
