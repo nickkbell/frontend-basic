@@ -538,8 +538,9 @@ main .banner .container {
     display: block;
     max-width: 250px;
     height: 250px;
-    object-fit: contain;
+    object-fit: cover;
     mix-blend-mode: multiply;
+    z-index: 1;
 }
 
 .product-details {
@@ -773,11 +774,13 @@ main .banner .container {
     width: 250px;
     height: 250px;
     position: relative;
+    padding-bottom: 50px;
 }
 
   .icons-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: -120px;
     left: 50%;
@@ -806,8 +809,48 @@ main .banner .container {
 }
 
 
-.icons-link img {
-    width: 100%;
-    height: auto;
+.icons-link a img {
+    width: 20px;
+    height: 20px;
+  }
+
+.prices {
+    display: flex;
 }
 
+.discount {
+    display: block;
+    width: 80px;
+    height: auto;
+    background-color: #46A358;
+    opacity: 0;
+}
+
+.discount p {
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.discount-price {
+    display: none;
+    text-decoration: line-through;
+    font-family: 'fontspring_demo_-_cera_proRg';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    width: 65px;
+    height: 0px;
+    padding-left: 17px;
+}
+
+.flex-container .product-card:hover .discount-price {
+    display: block;
+}
+
+.flex-container .product-card:hover .discount {
+    opacity: 1;
+}
