@@ -253,6 +253,19 @@ header nav ul li .dropdown {
     padding-top: 40px;
 }
 
+.internal-dropdown {
+    display: none;
+    position: absolute;
+    top: -108px;
+    left: 100%;
+    background-color: #555;
+    min-width: 180px;
+  }
+
+  .internal-drop:hover > .internal-dropdown {
+    display: block;
+  }
+
 header nav li .dropdown a:hover::before {
     display: none;
 }
@@ -291,6 +304,10 @@ header nav ul li .dropdown a:hover:after {
     transform: rotate(180deg);
     background-image: url("../images/arrow_hover.svg");
 }
+
+header nav li .dropdown .internal-dropdown li a::after {
+    content: none;
+  }
 
 header nav ul li.drop:hover .dropdown {
     display: block;
@@ -819,14 +836,11 @@ main .banner .container {
 }
 
 .discount {
-    display: block;
-    width: 80px;
-    height: auto;
+    display: inline-block;
+    position: absolute;
+    left: 0;
     background-color: #46A358;
     opacity: 0;
-}
-
-.discount p {
     font-family: 'cera_promedium';
     font-weight: 500;
     font-size: 16px;
