@@ -911,6 +911,12 @@ footer form button {
     border: none;
 }
 
+footer form button:hover {
+    background-color: white;
+    color: #46A358;
+    transition: 0.5s;
+}
+
 footer .gradient {
     display: flex;
     justify-content: space-between;
@@ -1044,6 +1050,18 @@ footer .social_media li a {
 
 footer .footer-menu article img {
     cursor: pointer;
+}
+
+footer .social_media li a:hover {
+    background-color: #46A358;
+    border: 1px solid #46A358;
+    transition: 0.6s;
+}
+
+footer .social_media li a:hover svg path {
+    fill: #FFFFFF;
+    fill-opacity: 100%;
+    transition: 0.6s;
 }
 
 footer .copyright {
