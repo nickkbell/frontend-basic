@@ -912,9 +912,7 @@ footer form button {
 }
 
 footer form button:hover {
-    background-color: white;
-    color: #46A358;
-    transition: 0.5s;
+    background-color: #059c23;
 }
 
 footer .gradient {
