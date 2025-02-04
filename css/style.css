@@ -1,0 +1,962 @@
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../fonts/Fontspring-DEMO-cerapro-black.otf') format('otf'),
+        url('../fonts/Fontspring-DEMO-cerapro-blackitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../fonts/Fontspring-DEMO-cerapro-bold.otf') format('otf'),
+        url('../fonts/Fontspring-DEMO-cerapro-bolditalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'cera_prolight';
+    src: url('../fonts/Fontspring-DEMO-cerapro-light.otf') format('otf'),
+        url('../fonts/Fontspring-DEMO-cerapro-lightitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/Fontspring-DEMO-cerapro-medium.otf') format('otf'),
+        url('../fonts/Fontspring-DEMO-cerapro-mediumitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../fonts/Fontspring-DEMO-cerapro-regular.otf') format('otf'),
+        url('../fonts/Fontspring-DEMO-cerapro-regularitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'cera_prothin';
+    src: url('../fonts/Fontspring-DEMO-cerapro-thin.otf') format('otf'),
+        url('../fonts/Fontspring-DEMO-cerapro-thinitalic.otf') format('otf');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.closeIcon {
+    float: right;
+    cursor: pointer;
+    color: green;
+    text-decoration: none;
+}
+
+.separator {
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.textGreen {
+    color: green;
+}
+
+.mainTitle {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.inputBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box
+}
+
+.buttonBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+    margin-top: 41px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    background-color: #46A358;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #059c23;
+}
+
+.registerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.line span {
+    margin: 0 10px;
+    color: #666;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #727272;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    text-align: center;
+    color: #727272;
+}
+
+.link img {
+    margin-right: 10px;
+}
+
+.link:hover {
+    background-color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header {
+    margin-bottom: 12px;
+}
+
+header .container {
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav ul li a {
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+    position: relative;
+}
+
+header nav li a::before {
+    content: "";
+    display: block;
+    background-color: #46A358;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -25px;
+    transition: 0.4s;
+}
+
+header nav li a:hover::before {
+    width: 100%;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    padding-top: 40px;
+}
+
+.internal-dropdown {
+    display: none;
+    position: absolute;
+    top: -108px;
+    left: 100%;
+    background-color: #555;
+    min-width: 180px;
+}
+
+.internal-drop:hover>.internal-dropdown {
+    display: block;
+}
+
+header nav li .dropdown a:hover::before {
+    display: none;
+}
+
+header nav li .dropdown a {
+    padding: 8px 14px;
+    min-width: 188px;
+    display: inline-block;
+    background-color: #edf6ee;
+    line-height: 20px;
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    transition: 0.3s;
+    position: relative;
+}
+
+header nav li .dropdown a:hover {
+    background-color: #1a712a;
+    color: white;
+}
+
+header nav li .dropdown li:last-of-type a::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    background-image: url("../images/arrow.svg");
+}
+
+header nav ul li .dropdown a:hover:after {
+    transform: rotate(180deg);
+    background-image: url("../images/arrow_hover.svg");
+}
+
+header nav li .dropdown .internal-dropdown li a::after {
+    content: none;
+}
+
+header nav ul li.drop:hover .dropdown {
+    display: block;
+}
+
+header .login {
+    background: #46A358;
+    border-radius: 6px;
+    padding: 7px 17px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'cera_proregular';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+header .login svg {
+    margin-right: 4px;
+}
+
+header .login svg path {
+    transition: 0.4s;
+}
+
+header .login:hover {
+    background-color: white;
+    color: #46A358;
+}
+
+header .login:hover svg path {
+    stroke: #46A358;
+}
+
+.banner {
+    margin-bottom: 40px;
+}
+
+.banner .container {
+    align-items: center;
+    padding-left: 40px;
+}
+
+.banner-sub-title {
+    text-align: left;
+    font-family: 'cera_promedium, sans-serif;';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+}
+
+.banner-main-title {
+    text-align: left;
+    font-family: 'cera_problack', sans-serif;
+    ;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-bottom: 5px;
+}
+
+.banner-main-title span {
+    color: #46a358;
+}
+
+.banner-paragraph {
+    text-align: left;
+    font-family: 'cera_proregular, sans-serif;';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    padding-bottom: 44px;
+}
+
+.banner-redirect {
+    background: #46A358;
+    border-radius: 6px;
+    padding: 10px 26px;
+    display: inline;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.banner-redirect:hover {
+    background-color: white;
+    color: #46A358;
+}
+
+main .banner .container {
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+
+.content .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content .sidebar {
+    max-width: 310px;
+    background-color: #f9f9f9;
+}
+
+.content .sidebar h3 {
+    font-family: 'cera_proregular, sans-serif;';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin: 14px 0 7px 18px;
+    text-align: left;
+}
+
+.content .sidebar ul {
+    margin-left: 30px;
+    padding-bottom: 370px;
+}
+
+.content .sidebar ul li a {
+    font-family: 'cera_proregular, sans-serif;';
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 267%;
+    color: #3d3d3d;
+}
+
+.content .sidebar ul li a:hover {
+    color: #46a358;
+    font-weight: 700;
+}
+
+.content .sidebar img {
+    width: 100%;
+}
+
+.content .product {
+    width: 840px;
+    margin-left: 50px;
+
+}
+
+.content .product .sorting {
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.content .product .sorting ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content .product .sorting ul li a {
+    font-family: 'cera_proregular, sans-serif;';
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    position: relative;
+}
+
+.content .product .sorting ul li a:hover {
+    font-weight: 700;
+    color: #46a358;
+}
+
+.content .product .sorting ul li a:hover:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #46a358;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+.content .sorting .sort-container {
+    margin-left: auto;
+    font-family: 'cera_proregular, sans-serif;';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    border: none;
+}
+
+.content .sorting .sort-label {
+    font-family: 'cera_proregular, sans-serif;';
+    margin-right: 8px;
+}
+
+.content .sorting .sort-select {
+    border: none;
+    font-family: 'cera_proregular, sans-serif;';
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.content .product-list .product_svg {
+    position: relative;
+    top: -20px;
+}
+
+.content .product-list .product_svg ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+    margin-bottom: 70px;
+}
+
+.content .product-list article {
+    z-index: 3;
+    position: relative;
+}
+
+.content .product-list .frame {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    bottom: 52px;
+    left: 72px;
+}
+
+.content .product-list article:hover .frame {
+    z-index: 1;
+}
+
+.content .product-list .frame a:hover svg path {
+    fill: #46a358;
+}
+
+.content .product-list article {
+    border-top: 3px solid transparent;
+    margin-bottom: 50px;
+}
+
+.content .product-list article:hover {
+    border-top: 3px solid #46a358;
+}
+
+.content .product-list img {
+    width: 258px;
+    background: #fbfbfb;
+}
+
+.content .product-list h4 {
+    padding-top: 10px;
+    font-family: 'cera_proregular, sans-serif;';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+
+.content .product-list .discount {
+    position: absolute;
+    top: 14px;
+    background-color: #46A358;
+    opacity: 0;
+    font-family: 'cera_promedium, sans-serif;';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.content .product-list .prices {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.content .product-list .prices .product-price {
+    margin-top: 5px;
+    font-family: 'cera_proregular, sans-serif;';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+
+.content .product-list .discount-price {
+    display: flex;
+    text-decoration: line-through;
+    font-family: 'cera_proregular, sans-serif;';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    width: 65px;
+    height: 0px;
+    padding-left: 17px;
+    opacity: 0;
+}
+
+.content .product-list article:hover .discount,
+.content .product-list article:hover .discount-price {
+    opacity: 1;
+}
+
+.content .pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 95px;
+}
+
+.content .pagination ul {
+    display: flex;
+    gap: 10px;
+}
+
+.content .pagination ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    font-family: 'cera_proregular, sans-serif;';
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    border-radius: 4px;
+}
+
+.content .pagination ul li a:hover {
+    font-weight: 700;
+    border: 1px solid #46a358;
+    background-color: #46a358;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.blog-card {
+    display: flex;
+    justify-content: space-between;
+    background: #fbfbfb;
+    padding: 20px;
+    position: relative;
+}
+
+.blog-image {
+    width: 289px;
+    height: 287px;
+    position: absolute;
+    top: -50px;
+    left: -20px;
+}
+
+.blog-details {
+    margin-left: 300px;
+    text-align: right;
+}
+
+.blog-name {
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: 'cera_problack, sans-serif;';
+}
+
+.blog-text {
+    margin-bottom: 25px;
+    font-family: 'cera_proregular, sans-serif;';
+}
+
+.blog-details a {
+    background: #46A358;
+    border-radius: 6px;
+    padding: 7px 17px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'cera_promedium, sans-serif;';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.blog-details a:hover {
+    background-color: white;
+    color: #46A358;
+}
+
+.blog-details a svg {
+    align-content: center;
+}
+
+.blog-details a:hover svg path {
+    stroke: #46A358;
+}
+
+.blog-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    text-align: center;
+    color: #3d3d3d;
+    font-family: 'cera_probold, sans-serif;';
+}
+
+.blog-paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 35px;
+    font-family: 'cera_proregular, sans-serif;';
+}
+
+.blog-post {
+    background: #fbfbfb;
+}
+
+.blog-post-image {
+    width: 268px;
+    height: 195px;
+}
+
+.blog-post-info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    margin-bottom: 4px;
+    font-family: 'cera_promedium, sans-serif;';
+}
+
+.blog-post-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    text-align: left;
+    margin: 0;
+    font-family: 'cera_probold, sans-serif;';
+}
+
+.blog-post-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    margin-bottom: 10px;
+    font-family: 'cera_proregular, sans-serif;';
+}
+
+.blog-post a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    font-family: 'cera_promedium, sans-serif;';
+}
+
+
+footer .footer-items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+    background: #fbfbfb;
+}
+
+footer .footer-items article {
+    flex: 1;
+    display: block;
+    position: relative;
+    padding: 0 20px;
+}
+
+footer .footer-items article h3 {
+    text-align: left;
+    margin-bottom: 25px;
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+}
+
+footer .footer-items article:last-of-type h3 {
+    padding-top: 37px;
+}
+
+footer .footer-items article p {
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    padding-bottom: 24px;
+}
+
+footer .footer-items article img {
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+
+footer .footer-items article:last-child {
+    flex: 0 0 355px;
+    max-width: 355px;
+}
+
+footer .footer-items article:nth-of-type(1)::after,
+footer .footer-items article:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    width: 187px;
+    height: 1px;
+    background: rgba(70, 163, 88, 0.1);
+    transform: rotate(90deg);
+    top: 120px;
+    right: -120px;
+    transform-origin: center;
+}
+
+footer form .join-form {
+    display: flex;
+    align-content: baseline;
+    width: 324px;
+    padding-bottom: 18px;
+}
+
+footer form input {
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+}
+
+footer form button {
+    padding: 10px 15px;
+    width: 100px;
+    height: 40px;
+    background: #46a358;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+}
+
+footer .gradient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 155px;
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+    height: 88px;
+}
+
+footer .gradient .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .gradient .icons:last-of-type {
+    padding-right: 20px;
+}
+
+footer .gradient .logo {
+    padding-left: 20px;
+}
+
+footer .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 12px;
+}
+
+footer .footer-menu ul {
+    padding-top: 33px;
+    padding-left: 25px;
+}
+
+footer .footer-menu ul li{
+    padding-bottom: 10px;
+}
+
+footer .footer-menu ul li a {
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+footer .footer-menu ul li:first-child {
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+
+footer .footer-menu article h3 {
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+footer .footer-menu article:last-of-type {
+    padding-top: 13px;
+    padding-right: 150px;
+}
+
+footer .social_media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 33px;
+}
+
+footer .footer-menu article img {
+    cursor: pointer;
+}
+
+footer .copyright {
+    text-align: center;
+}
