@@ -1067,4 +1067,9 @@ footer .social_media li a:hover svg path {
 footer .copyright {
     padding-top: 7px;
     text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    font-family: 'cera_proregular', sans-serif;
 }
