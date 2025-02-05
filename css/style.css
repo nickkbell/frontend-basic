@@ -236,6 +236,13 @@ header nav li a:hover::before {
     border: 0.30px solid rgba(70, 163, 88, 0.5);
 }
 
+header nav li a:hover {
+    font-family: 'cera_probold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
 header nav ul li {
     position: relative;
 }
@@ -1044,6 +1051,11 @@ footer .social_media li a {
     border-radius: 4px;
     width: 30px;
     height: 30px;
+}
+
+footer .footer-menu li a:hover {
+    color: #46a358;
+    font-weight: 700;
 }
 
 footer .footer-menu article img {
