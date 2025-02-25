@@ -697,12 +697,17 @@ main .banner .container {
     position: relative;
 }
 
-.blog-image {
+.blog-image, .owl-carousel .owl-item img {
     width: 289px;
     height: 287px;
     position: absolute;
     top: -50px;
     left: -20px;
+    z-index: 10;
+}
+
+.owl-stage-outer {
+    overflow: visible !important;
 }
 
 .blog-details {
