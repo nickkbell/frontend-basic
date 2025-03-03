@@ -714,9 +714,9 @@ main .banner .container {
     padding: 0 10px; /* Add some spacing between items */
 }
 
-/* .owl-stage-outer {
+.owl-stage-outer {
     overflow: visible !important;
-} */
+}
 
 .blog-details {
     margin-left: 300px;
