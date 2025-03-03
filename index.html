@@ -15,15 +15,90 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
 
+    <link rel="stylesheet" href="css/mob_menu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/preproc.css">
 
-
+    
   </head>
   <body>
     <!-- <div class="preloader"></div> -->
-    <header>
+    <header class="cd-header">
+      <div class="header-wrapper container">
+        <div class="nav-but-wrap">
+          <div class="menu-icon hover-target">
+              <span class="menu-icon__line menu-icon__line-left"></span>
+              <span class="menu-icon__line"></span>
+              <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+      </div>
+          <a href="#" class="logo">
+            <img src="images/Logo.svg" alt="logo">
+          </a>
+          
+          <nav class="nav">
+              <div class="nav__content">
+                  <ul class="nav__list">
+                      <li class="nav__list-item"><a href="#" class="hover-target">Home</a></li>
+                      <li class="nav__list-item"><a href="#" class="hover-target">Shop</a></li>
+                      <li class="nav__list-item"><a href="#" class="hover-target drop">Plane Care</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Drainage</a></li>
+                          <li><a href="#">Fungicides</a></li>
+                          <li><a href="#">Fertilizer</a></li>
+                          <li class="internal-drop">
+                            <a href="#">Priming</a>
+                            <ul class="internal-dropdown">
+                              <li><a href="#">Universal</a></li>
+                              <li><a href="#">For Ficus</a></li>
+                              <li><a href="#">For Cacti</a></li>
+                              <li><a href="#">For Citrus</a></li>
+                              <li><a href="#">For those in bloom</a></li>
+                              <li><a href="#">For Orchids</a></li>
+                            </ul></li></ul></li>
+                      <li class="nav__list-item"><a href="#" class="hover-target">Blogs</a></li>
+                  </ul>
+              </div>
+            </nav>
+
+          <a href="registration.html" class="login">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.1601 10.1006H8.12598"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.7212 7.67059L18.1612 10.1006L15.7212 12.5306"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.6342 6.35826C13.3592 3.37493 12.2425 2.2916 7.80082 2.2916C1.88332 2.2916 1.88332 4.2166 1.88332 9.99993C1.88332 15.7833 1.88332 17.7083 7.80082 17.7083C12.2425 17.7083 13.3592 16.6249 13.6342 13.6416"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Login
+          </a>
+      </div>
+  </header>
+
+
+    <!-- <header> 
       <div class="container">
         <a href="#">
           <img src="images/Logo.svg" alt="logo">
@@ -87,7 +162,12 @@
           Login
         </a>
       </div>
-    </header>
+    </header>  -->
+    
+  
+
+  
+
 
     <main>
       <section class="banner">
@@ -731,7 +811,7 @@
       <section>
         <div class="blog-container">
 
-          <div class="blog-items owl-carousel first-carousel">
+          <div class="owl-carousel first-carousel blog-items">
             <div class="blog-card">
               <img
                 src="images/blogs/findmore1.png"
