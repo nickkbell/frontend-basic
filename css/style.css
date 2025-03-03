@@ -706,6 +706,14 @@ main .banner .container {
     z-index: 10;
 }
 
+.blog-items .owl-carousel .second-carousel .owl-item img  {
+    position: static;
+}
+
+.owl-item {
+    padding: 0 10px; /* Add some spacing between items */
+}
+
 .owl-stage-outer {
     overflow: visible !important;
 }
@@ -782,12 +790,17 @@ main .banner .container {
 }
 
 .blog-post {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
     background: #fbfbfb;
 }
 
 .blog-post-image {
     width: 268px;
     height: 195px;
+    position: static !important;
 }
 
 .blog-post-info {
